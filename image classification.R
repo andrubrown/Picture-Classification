@@ -1,4 +1,10 @@
-Code: library(kernlab) library(cluster) library(FNN) library(glmnet) library(randomForest) library(e1071) library(RColorBrewer)
+library(kernlab) 
+library(cluster) 
+library(FNN) 
+library(glmnet) 
+library(randomForest) 
+library(e1071) 
+library(RColorBrewer)
 ###Matt###
 #initial data processing
 test_im = read.csv('C://Users//Bob/Desktop//test (1).csv', header = FALSE) train_im = read.csv('C://Users//Bob/Desktop//train (1).csv', header = FALSE)
@@ -209,4 +215,4 @@ prop = sum(train.predict==train.test[,1])/length(train.test[,1]) accuracy.lr = c
 } 1­mean(accuracy.lr)
 #0.09039333 error sparse lambda[12] for 6's ­­ much lower than before #0.08377333 error for 1's
 #variant of 1’s/6’s subset added to Matt’s code
->>>>>>> FETCH_HEAD
+
